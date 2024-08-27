@@ -124,9 +124,8 @@ void IGFX::init() {
 			break;
 		case CPUInfo::CpuGeneration::TigerLake:
 			supportsGuCFirmware = true;
-			currentGraphics = &kextIntelICL;
-			currentFramebuffer = &kextIntelICLLPFb;
-			currentFramebufferOpt = &kextIntelICLHPFb;
+			currentGraphics = &kextIntelTGL;
+			currentFramebuffer = &kextIntelTGLFb;
 			modDVMTCalcFix.available = true;
 			modForceCompleteModeset.supported = modForceCompleteModeset.enabled = true;
 			break;
